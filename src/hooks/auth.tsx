@@ -52,6 +52,8 @@ interface AuthContextData{
     const signOut = useCallback(() => {
      localStorage.removeItem('@GoBarber:token');
       localStorage.removeItem('@GoBarber:user');
+
+      setData({} as AuthState);
     },[]);
 
   return(
